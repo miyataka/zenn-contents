@@ -3,7 +3,7 @@ title: "freezedでJsonSerializableのオプションを使いたいときには"
 emoji: "❄️"
 type: "tech" # tech: 技術記事 / idea: アイデア
 topics: ["freezed", "json", "flutter", "dart", "serialize"]
-published: false
+published: true
 ---
 
 # 背景
