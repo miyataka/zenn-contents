@@ -8,6 +8,7 @@ published: true
 
 ## 前提
 - iOS, Android, webへpush通知を送りたい
+- 新規サービス開発である
 
 ## 結論
 - firebase cloud messaging(FCM) 一択である
