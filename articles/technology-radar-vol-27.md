@@ -3,7 +3,7 @@ title: "テクノロジーレーダーをざっと読んだので紹介"
 emoji: "🎈"
 type: "idea" # tech: 技術記事 / idea: アイデア
 topics: ["thoughtworks"]
-published: false
+published: true
 ---
 
 これは[カンム Advent Calendar 2022](https://adventar.org/calendars/7789)の9日目の記事です．
