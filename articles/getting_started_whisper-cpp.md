@@ -61,6 +61,7 @@ published: true
         - `./main -m models/ggml-large.bin -l ja -f samples/test.wav`
         - ![](/images/getting_started_whisper-cpp/execute-result.png)
     - 結果
+        - やったね
         :::details 実行結果
         ```
         ➜  whisper.cpp git:(master) ./main -m models/ggml-large.bin -l ja -f samples/test.wav
@@ -99,5 +100,4 @@ published: true
         whisper_print_timings:   decode time =  2259.45 ms / 70.61 ms per layer
         whisper_print_timings:    total time = 14135.59 ms
         ```
-        :::details
-        - やったね
+        :::
