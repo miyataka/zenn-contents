@@ -9,6 +9,7 @@ published: true
 ## 前書き
 - いわゆる「やってみた」記事です
 - 別にこの記事を読まなくてもREADMEをちゃんと読めば十分理解できるはずですが，日本語での情報としてまとめ直すことに一定の意味があると思い記事を書いています．
+- 役立ったかたはLikeしてってください
 
 ## 前提
 - gitがインストールされている
@@ -22,7 +23,7 @@ published: true
     - OpenAIという団体が開発したモデル
     - https://github.com/openai/whisper
     - > Whisper is a general-purpose speech recognition model. It is trained on a large dataset of diverse audio and is also a multi-task model that can perform multilingual speech recognition as well as speech translation and language identification.
-    - つまり，汎用音声
+    - 一言でいえば，汎用音声認識モデル．さらに言い換えれば，音声書き起こしモデル（これは言い過ぎな気もする）．
 - whisper.cpp
     - whisperをC/C++移植したもの（高速化したもの）
 
@@ -54,7 +55,7 @@ published: true
     - iPhoneで録音してみる & AirDropで転送
         - ![](/images/getting_started_whisper-cpp/20221212_screenshot_iphone.jpeg =300x)
     - ffmpegでwavに変換
-        - インプットの形式がwavかつサンプリングレートが決まっているのでそれに合わせルように変換
+        - インプットの形式がwavかつサンプリングレートが決まっているのでそれに合わせるように変換
         - `ffmpeg -i ~/Downloads/テスト.m4a -ar 16000 samples/test.wav`
     - 解析実行
         - `./main -m models/ggml-large.bin -l ja -f samples/test.wav`
