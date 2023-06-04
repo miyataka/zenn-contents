@@ -3,8 +3,13 @@ title: "gocon2023の資料リンクをできるだけ集める場所"
 emoji: "🎈"
 type: "tech" # tech: 技術記事 / idea: アイデア
 topics: ["go"]
-published: false
+published: true
 ---
+
+2023/06/23に[GoConference2023](https://gocon.jp/2023/timetable/)がオンライン開催されました
+アーカイブ公開が待ちきれませんね！！！！
+資料もいっしょに見直したいけど，まとまってないね！！！ということで作りました．使ってください．
+ええやん！というかたはLikeしてってくださいね！！！！
 
 # A track
 - タクシーアプリ『GO』高速マッチングシステムで実践したGoチューニングテクニック
