@@ -11,7 +11,7 @@ published: true
 資料もいっしょに見直したいけど，まとまってないね！！！ということで作りました．使ってください．
 ええやん！というかたはLikeしてってくださいね！！！！
 
-アーカイブ公開されました！！ > [Go Conference 2023 Onlineのセッション動画を公開しました](https://zenn.dev/gophersjp/articles/4e1ef7852c2f0e)
+追記 > アーカイブ公開されました！！ [Go Conference 2023 Onlineのセッション動画を公開しました](https://zenn.dev/gophersjp/articles/4e1ef7852c2f0e)
 
 # A track
 - タクシーアプリ『GO』高速マッチングシステムで実践したGoチューニングテクニック
