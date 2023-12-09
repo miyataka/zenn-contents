@@ -3,7 +3,7 @@ title: "2023年の振り返り"
 emoji: "🎈"
 type: "idea" # tech: 技術記事 / idea: アイデア
 topics: ["adventcalendar"]
-published: false
+published: true
 ---
 
 
