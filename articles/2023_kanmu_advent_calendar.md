@@ -35,7 +35,7 @@ https://speakerdeck.com/always_allokay/burogunoriakusiyonkarashi-merugonopahuoma
 
 ## どうしてやろうと思ったのか
 
-同僚の存在が大きいです．カンムは継続的にGoConferenceのスポンサリングしていることもあってか，登壇経験のあるエンジニアメンバーが多くいます．
+同僚の存在が大きいです．カンムは継続的にGoConferenceのスポンサリングしている[^1][^2][^3]こともあってか，登壇経験のあるエンジニアメンバーが多くいます．
 特に自分が所属する[Pool](https://pool-card.jp/)チームのエンジニアは自分以外は全員登壇経験ありという状況で，自分もそこに追いつきたいというモチベーションがありました．
 
 
@@ -69,3 +69,8 @@ https://speakerdeck.com/always_allokay/burogunoriakusiyonkarashi-merugonopahuoma
 僕はそう思います．
 
 カンムに少しでも興味を持たれた方は、よかったら[採用ページ](https://team.kanmu.co.jp/)も見てみてください．
+
+
+[^1]: https://gocon.jp/2023/
+[^2]: https://gocon.jp/2022spring/ja/
+[^3]: https://gocon.jp/2021autumn/ja/partners/
