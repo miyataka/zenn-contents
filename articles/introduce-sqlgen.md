@@ -3,7 +3,7 @@ title: "sqlgenの紹介"
 emoji: "🎈"
 type: "tech" # tech: 技術記事 / idea: アイデア
 topics: ["sqlc","sqlgen", "sql", "golang"]
-published: false
+published: true
 ---
 
 ## sqlgenとは
@@ -13,7 +13,9 @@ published: false
 ## なぜ作ったのか
 
 私はとあるプロジェクトで[sqlc](https://github.com/sqlc-dev/sqlc)を利用しています． \
-sqlcはとても便利なのですが，単純なINSERT文をはじめ，すべてSQLを手書きする必要があり，さすがに煩雑だと感じたので，一括で生成するCLIを作りました．
+sqlcはとても便利なのですが，単純なINSERT文をはじめ，すべてSQLを手書きする必要があります． \
+まだ開発途中なので，テーブル定義の変更もたまに起きます．その都度手動修正するのはさすがに煩雑だと感じたので，一括で生成するCLIを作りました．
+
 
 ## sqlgenのインストール方法
 sqlgenは，ライブラリではなく，CLIツールとして開発しており，プログラムから利用することは現状考えていません．
