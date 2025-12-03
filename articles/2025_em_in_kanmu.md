@@ -3,7 +3,7 @@ title: "Engineering Managerになって変わること変わらないこと，�
 emoji: "🎈"
 type: "idea" # tech: 技術記事 / idea: アイデア
 topics: ["engineeringmanager"]
-published: false
+published: true
 publication_name: "kanmu_dev"
 ---
 
