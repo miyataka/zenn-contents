@@ -2,8 +2,8 @@
 title: "俺の考えた一番わかりやすいSPF/DKIM/DMARC解説（N番煎じ）"
 emoji: "🎈"
 type: "tech" # tech: 技術記事 / idea: アイデア
-topics: []
-published: false
+topics: ["spf", "dkim", "dmarc", "mail", "security"]
+published: true
 publication_name: robustengine
 ---
 
