@@ -222,6 +222,7 @@ _dmarc.example.com. TXT "v=DMARC1; p=reject; rua=mailto:dmarc-rua@example.com; r
 6. DMARCが`FAIL`の場合，DMARCレコードの設定 or SPFかDKIMとのalignmentを一致させる必要がある
     - SPFのENVELOPE-FROM/MAIL-FROM と，Header-FROMの一致
     - DKIMのメールヘッダ`d=`（DNSドメイン）と，Header-Fromの一致
+7. DMARC含めて全てPASSするようになったら，DMARCのpolicy(`p=`)を段階的に引き上げる
 
 
 
