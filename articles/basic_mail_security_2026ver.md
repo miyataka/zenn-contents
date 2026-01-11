@@ -12,9 +12,9 @@ publication_name: robustengine
 メールは受信者側にとって「送信元が本物かどうか」を判断する仕組みがほとんどありません
 その結果、以下のような **なりすまし・フィッシング・詐欺** が横行しています
 
-* example.com を名乗った偽メールが届く
-* 送信元を偽装してわざと存在しない宛先に送り，バウンスメールを大量に送りつける（Backscatter）
-* 自社ドメインがスパム扱いになる
+- example.com を名乗った偽メールが届く
+- 送信元を偽装してわざと存在しない宛先に送り，バウンスメールを大量に送りつける（Backscatter）
+- 自社ドメインがスパム扱いになる
 
 このような被害を防ぐために、**送信元の正当性や内容の整合性を検証する仕組み** が必要になりました
 そこで登場するのが **SPF / DKIM / DMARC** です
@@ -52,8 +52,7 @@ example.com. TXT "v=spf1 ip4:203.0.113.10 ip4:198.51.100.0/24 -all"
 # さらなる具体例は以下
 ```
 
-<details>
-<summary>設定例</summary>
+:::details 設定例
 
 ### IPv4 を許可
 
@@ -140,7 +139,7 @@ example.com. TXT "v=spf1 ip4:203.0.113.10 include:_spf.google.com include:amazon
   をすべて許可
 
 
-</details>
+:::
 
 - ポイント
     - 受信サーバーは *ENVELOPE FROM*（Return-Path）のドメインを参照して SPF 判定
