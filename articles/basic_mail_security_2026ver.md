@@ -42,6 +42,9 @@ publication_name: robustengine
 
 - やっていること:
     - DNS の TXT レコードに「うちのドメインはどの IP から送るよ」と宣言する仕組み。
+    - （追記 2026/1/12）受信サーバーがHELO/EHLOとMAIL FROMの両方をチェックする場合、以下の順序が推奨される（RFC 7208 セクション2.3）:
+        1. HELO/EHLOドメインのSPFレコードを確認
+        2. MAIL FROM（エンベロープFrom）ドメインのSPFレコードを確認
 - 例
 
 ```
@@ -185,7 +188,10 @@ DKIM-Signature:
 
 - SPF / DKIM の結果を踏まえ、**From のドメイン整合性（alignment）** もチェックして最終判断する仕組み
 - SPF や DKIM が **pass** でも、From と一致していなければ **DMARC は pass にならない**
-- p=none / quarantine / reject のポリシーを受信側に指示できる
+- （追記 2026/1/12）メールに複数のDKIM署名が付与されている場合、Header-Fromドメインと一致（alignment）する有効な署名が**1つでも存在すれば** DMARC は PASS となる
+- （追記 2026/1/12）p=none / quarantine / reject のポリシーを受信側に**要望として**伝えることができる
+    - ただし、これは送信側の「要望」に過ぎず、受信側MTAはローカルポリシーで上書き可能
+    - 最終的な処理（受信・隔離・拒否）は受信側MTAが決定する
 - レポートによって失敗状況を可視化できる
 - 例
 ```
@@ -220,7 +226,7 @@ _dmarc.example.com. TXT "v=DMARC1; p=reject; rua=mailto:dmarc-rua@example.com; r
 4. SPFが`FAIL`の場合，SPFレコードの設定を更新する必要がある
 5. DKIMが`FAIL`の場合，DKIMレコードの設定を更新する必要がある
 6. DMARCが`FAIL`の場合，DMARCレコードの設定 or SPFかDKIMとのalignmentを一致させる必要がある
-    - SPFのENVELOPE-FROM/MAIL-FROM と，Header-FROMの一致
+    - SPFのHELO/EHLO or ENVELOPE-FROM/MAIL-FROM と，Header-FROMの一致 (修正 2026/1/12)
     - DKIMのメールヘッダ`d=`（DNSドメイン）と，Header-Fromの一致
 7. DMARC含めて全てPASSするようになったら，DMARCのpolicy(`p=`)を段階的に引き上げる
 
